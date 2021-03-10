@@ -8,8 +8,8 @@ class Counter extends Component {
         return ( 
             <div>
                 <span className={ this.formatClassname() }>{ this.formatCount() }</span>
-                <button key={"inc"+ this.props.counter.id} onClick={ () => { this.props.onIncOrDec(0, this.props.counter) } } className={ this.btnClass }>+</button>
-                <button key={"dec"+ this.props.counter.id} onClick={ () => { this.props.onIncOrDec(1 , this.props.counter) } } className={ this.btnClass }>-</button>
+                <button key={"inc"+ this.props.counter.id} onClick={ () => { this.props.onIncOrDec(0, this.props.counter) } } className={ this.btnClass }>Increment</button>
+                <button key={"dec"+ this.props.counter.id} onClick={ () => { this.props.onIncOrDec(1 , this.props.counter) } } className={ this.btnClass }>Decrement</button>
                 <button className="btn btn-danger btn-sm" onClick={ () => this.props.onDelete(this.props.counter.id)}>Delete</button>
             </div>
          );
